@@ -1,0 +1,7 @@
+{
+  "name": "PicNPick",
+  "description": "PicNPick is an AI-powered shopping assistant that lets users upload a photo of any product and instantly find the best deals across all major e-commerce platforms. Powered by Gemini, it identifies the item and compares prices in real time, helping users shop smarter with just a snap.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
