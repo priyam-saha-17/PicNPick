@@ -1,20 +1,50 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 📸 PicNPick — AI-Powered Product Deal Finder
 
-# Run and deploy your AI Studio app
+**PicNPick** transforms the way users shop: just upload a product image, and our AI assistant identifies the item, crafts a location-aware search query, and returns the best live deals from multiple retailers.
 
-This contains everything you need to run your app locally.
+## 🚀 Live Demo
 
-View your app in AI Studio: https://ai.studio/apps/drive/1wgKwZ-kGQ_g1dKUA5a6ZJO_TMv0568fT
+[Live Demo](#) <!-- Replace with actual URL or image screenshot if hosted -->
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## ✨ Features & Highlights
 
+- **🧠 Image-to-Product AI**: Utilizes **Google Gemini 2.5 Flash** to identify the brand, model, and key product details from an uploaded image.
+  
+- **🔍 Smart Query Generation**: Automatically generates context-aware search queries like:  
+  \`"LG refrigerator deliverable to 700078 India"\` for precise results.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **🌐 Multi-Retailer Search**: Uses **Google Custom Search API** to gather results globally, with intelligent fallback strategies to enhance retailer relevance.
+
+- **🛍️ Full Deal Cards**: Displays a product card containing:
+  - Product image
+  - Price
+  - Retailer logo
+  - Buy link
+  - Estimated delivery
+
+- **📍 Location-Aware Results**: Filters deals based on user’s country and pincode.
+
+- **💻 Responsive UI**: Built with **React + TypeScript** and styled using **Tailwind CSS** for a fast, sleek interface.
+
+---
+
+## 🛠 Tech Stack
+
+| Component        | Description                                 |
+|------------------|---------------------------------------------|
+| **Frontend**     | React, TypeScript, Tailwind CSS             |
+| **AI Processing**| Google Gemini 2.5 Flash                     |
+| **Search Engine**| Google Custom Search API                    |
+| **Parsing**      | Heuristics & structured pagemap parsing     |
+
+---
+
+## ⚙️ Setup & Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/priyam-saha-17/PicNPick.git
+cd PicNPick
