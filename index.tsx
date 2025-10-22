@@ -2,6 +2,10 @@
  * @license
  * SPDX-License-Identifier: Apache-2.0
  */
+// Load environment variables
+import dotenv from "dotenv";
+dotenv.config();
+
 import { GoogleGenAI, Type } from '@google/genai';
 import { useEffect, useState, useMemo, useCallback } from 'react';
 import ReactDOM from 'react-dom/client';
@@ -116,8 +120,8 @@ const translations = {
   },
 };
 
-const GOOGLE_CSE_API_KEY = "AIzaSyDi9O7QREzU2mw2BLRRz_VB5wG58NZTVzI";
-const GOOGLE_CSE_ID = "253d5a5f1c17a444d";
+const GOOGLE_CSE_API_KEY = process.env.GOOGLE_CSE_API_KEY;
+const GOOGLE_CSE_ID = process.env.GOOGLE_CSE_ID;
 
 const countries = [
     { name: "Afghanistan", code: "AF" }, { name: "Albania", code: "AL" }, { name: "Algeria", code: "DZ" },
